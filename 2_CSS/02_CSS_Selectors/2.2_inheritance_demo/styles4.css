@@ -1,0 +1,27 @@
+body {
+    color: purple;
+}
+
+section {
+    color: aqua;
+}
+
+form {
+    color: greenyellow;
+}
+
+
+/* Not every element will inherit every property.  
+For example for button and input, we have to explicitly set the color to inherit */
+
+button,
+input {
+    color: inherit;
+}
+
+/*!!!!!! Some properties are not inheritable */
+
+
+input[type="text"]::placeholder {
+    color: aqua;
+}

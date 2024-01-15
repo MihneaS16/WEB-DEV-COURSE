@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <!-- Outside of the form, no default behaviour -->
+    <button>Outside form</button>
+    <br>
+    <br>
+
+    <form action="/tacos">
+        <!-- This button does not submit the form, because of the "type" attribute -->
+        <button type="button">DO NOT SUBMIT</button>
+        <p>
+            <label for="username">Enter a username:</label>
+            <input id="username" type="text" placeholder="username" name="username">
+        </p>
+        <p>
+            <label for="password">Enter a password:</label>
+            <input id="password" type="password" placeholder="password" name="password">
+        </p>
+        <button type="button">In the middle</button>
+        <p>
+            <label for="color">Choose a color:</label>
+            <input id="color" type="color" name="color">
+        </p>
+        <p>
+            <label for="number">Enter a number</label>
+            <input id="number" type="number" placeholder="number" name="num" min="1" max="1000" step="1">
+        </p>
+        <!-- These buttons all submit the form -->
+        <button>Submit</button>
+        <button type="submit">Submit</button>
+        <!-- This syntax is not that advisable to use -->
+        <input type="submit" value="Submit">
+        <!--  -->
+    </form>
+    <br>
+    <hr>
+    <h2>Hijacking searches</h2>
+    <h3>Search Reddit</h3>
+    <form action="https://www.reddit.com/search">
+        <input type="text" name="q">
+        <button type="submit">Search Reddit</button>
+    </form>
+    <br>
+    <h3>Search Google</h3>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button type="submit">Search Google</button>
+    </form>
+    <br>
+    <h3>Search YouTube</h3>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button type="submit">Search YouTube</button>
+    </form>
+
+    <h2>More inputs</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree">I agree to the terms of service</label>
+        <p>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="xs">XS</label>
+            <br>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="s">S</label>
+            <br>
+            <input type="radio" name="size" id="m" value="m">
+            <label for="m">M</label>
+            <br>
+        </p>
+        <p>
+            <label for="quantity">Please select a quantity</label>
+            <select name="quantity" id="quantity">
+                <option value="" selected>--Please choose an option--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="more">More</option>
+            </select>
+        </p>
+        <p>
+            <label for="volume">Volume</label>
+            <input type="range" name="volume_level" id="volume" value="100" step="10" min="0" max="100">
+        </p>
+        <p>
+            <label for="requests">Any special requests?</label>
+            <br>
+            <!-- Remember that textarea is not an input -->
+            <textarea name="requests" id="requests" cols="30" rows="10" placeholder="type something here"></textarea>
+        </p>
+        <button type="submit">Submit</button>
+    </form>
+    <h2>Validation Demo</h2>
+    <form action="/dummy">
+        <label for="first">Enter first name</label>
+        <input type="text" name="first" id="first" required>
+        <p>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" minlength="5" maxlength="20" required>
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </p>
+        <p>
+            <label for="github">Github</label>
+            <input type="url" name="github" id="github" required>
+        </p>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>

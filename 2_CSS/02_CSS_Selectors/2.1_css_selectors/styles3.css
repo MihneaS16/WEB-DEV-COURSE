@@ -1,0 +1,166 @@
+/* universal selector - selects everything 
+* {
+    color: pink;
+    background-color: grey;
+}
+*/
+
+body {
+    background-color: #dad7cd;
+}
+
+button {
+    font-size: 15px;
+    background-color: #588157;
+}
+
+
+/* ID SELECTORS */
+#signup {
+    background-color: #344e41;
+    color: #ffffff;
+}
+
+
+/* we can use comma to combine multiple selectors */
+h1,
+h2 {
+    color: #a3b18a;
+}
+
+span {
+    color: lime;
+}
+
+
+/* CLASS SELECTORS */
+.tag {
+    background-color: lightblue;
+    color: white;
+    font-size: 16px;
+}
+
+
+/* DESCENDANT SELECTORS */
+/* selects a inside of spans */
+span a {
+    color: #3a5a40;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* selects all h2 inside of elements with .post class */
+.post h2 {
+    color: darkgreen;
+}
+
+footer a {
+    color: lime;
+    text-decoration: none;
+}
+
+
+/* ADJACENT SELECTORS */
+/* selects only the buttons that are immediately preceded by an h2*/
+h2+button {
+    background-color: white;
+}
+
+
+/* DIRECT CHILD SELECTORS */
+/* selects the a that are the direct children of footer */
+footer>a {
+    color: blue;
+}
+
+
+/* ATTRIBUTE SELECTORS */
+/* selects all input elements where the type attribute is set to "text" */
+input[type="text"] {
+    color: grey;
+}
+
+/* section[class="post"] */
+section.post {
+    background-color: #a3b18a;
+}
+
+a[href*="contact"] {
+    color: magenta;
+}
+
+
+
+/* PSEUDO CLASSES */
+.post button:hover {
+    color: white;
+    background-color: red;
+}
+
+.post button:active {
+    background-color: hotpink;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+a[href="#home"]:active {
+    color: red;
+}
+
+.post:nth-of-type(2n) {
+    background-color: darkolivegreen;
+}
+
+
+
+/* PSEUDO ELEMENTS */
+.post h2::first-letter {
+    color: white;
+    font-size: 50px;
+}
+
+p::first-line {
+    color: green;
+}
+
+/* used when we select something on the page */
+::selection {
+    background-color: orange;
+}
+
+.post::after {
+    content: "This is what after does";
+    color: white;
+}
+
+
+/* CSS Cascade => The order the styles are declared in and linked to matters */
+/* This is true even if we have more stylesheets */
+h1 {
+    color: white;
+}
+
+
+/* CSS Specificity => How the browser decides which rules to apply 
+when multiple rules could apply to the same element*/
+/* It is actually a measure of how specific a given selector is. 
+The more specific selector wins */
+
+/* General Formula: ID > CLASS > ELEMENT */
+
+
+button:hover {
+    background-color: grey;
+    font-size: 17px;
+}
+
+/* Conflicting */
+/* .post button:hover {
+    color: white;
+    background-color: red;
+} */
+
+
+/* !important is used to override any other specificity - pretty bad idea to use */

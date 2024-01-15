@@ -1,0 +1,97 @@
+/* The percentages unit */
+
+/* Percentages are always relative to some other value */
+
+/* Sometimes it's a value from the parent and other times it's
+a value from the element itself */
+
+html {
+    font-size: 15px;
+}
+
+#percentages {
+    background-color: #6d6875;
+    width: 600px;
+    height: 600px;
+}
+
+#percentages div {
+    background-color: #e3989b;
+    /* 50% of the parent element's (section) width and height */
+    width: 50%;
+    height: 50%;
+}
+
+#percentages h1 {
+    font-size: 40px;
+    border: 1px solid black;
+    /* 200% of the element's font-size 200% of 40px => 80px */
+    line-height: 200%;
+}
+
+
+/* The em unit */
+/* Used in order to properly scale up or down properly 
+when, for example, the font-size changes */
+
+/* With font-size, 1em equals the font-size of the parent; 
+2em is twice the font-size of the parent, etc. */
+
+/* With other properties, 1em is equal to the computed 
+font-size of the element itself */
+
+#ems {
+    font-size: 20px;
+}
+
+#ems h2 {
+    font-size: 2em;
+    /* 1em of font-size of h2 (1em of 2em) => 2em of article font size => 40px */
+    margin-left: 1em;
+}
+
+#ems h3 {
+    font-size: 1.5em;
+}
+
+#ems p {
+    font-size: 1em;
+}
+
+button {
+    background-color: pink;
+    color: white;
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+}
+
+/* not ok, because it increases by 1.5 times with each nesting */
+#ems ul {
+    font-size: 1.5em;
+}
+
+
+/* The rem unit */
+/* Relative to the root html element's font-size. Ofter easier to work with */
+
+/* If the root font-size is 20px, 1 rem is always 20px, 2 rem is always 40px, etc. */
+
+/* It keeps it the size of the root element (which is <html lang="en">) 
+no matter how deeply nested the element is */
+
+#rems h2 {
+    font-size: 3rem;
+}
+
+#rems h3 {
+    font-size: 2rem;
+}
+
+#rems ul {
+    font-size: 0.8rem;
+}
+
+#rems button {
+    font-size: 1.5rem;
+}

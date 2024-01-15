@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get and Post</title>
+</head>
+
+<body>
+    <h1>GET and POST Requests</h1>
+    <h2>GET</h2>
+    <form action="http://localhost:3000/tacos" method="get">
+        <input type="text" name="meat" id="meat">
+        <input type="number" name="qty" id="qty">
+        <button>Submit</button>
+    </form>
+    <h2>POST</h2>
+    <!-- with the POST method, the URL will be empty when you submit it (the data is sent through the body) -->
+    <form action="http://localhost:3000/tacos" method="post">
+        <input type="text" name="meat" id="meat">
+        <input type="number" name="qty" id="qty">
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>

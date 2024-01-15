@@ -1,0 +1,92 @@
+div {
+    width: 200px;
+    height: 200px;
+}
+
+#one {
+    background-color: aliceblue;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    /* box-sizing sets the width of the element from border to border (for border-box) */
+    /* box-sizing: border-box; */
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+
+#two {
+    background-color: aquamarine;
+    border-width: 3px;
+    border-color: hotpink;
+    border-style: dashed;
+    border-left-color: black;
+    border-right-width: 5px;
+    padding-right: 50px;
+    margin: 100px;
+}
+
+#three {
+    background-color: lightblue;
+    /* border: width | style | color */
+    border: 6px inset brown;
+    border-bottom-style: dotted;
+    border-radius: 5%;
+}
+
+#circle {
+    color: white;
+
+    /* align "circle" on the center by column */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    /* align "circle" on the center by line */
+    text-align: center;
+
+    border: 10px solid blue;
+    border-radius: 200px;
+    background-color: blue;
+}
+
+
+/* PADDING is the space between the actual content box and 
+the border of an element - green in browser */
+/* padding: vertical | horizontal */
+/* padding: top | horizontal | bottom */
+/* padding: top | right | bottom | left  - clockwise */
+
+/* MARGIN is the space outside of the element's borders, between 
+that element and something else - orange in browser*/
+/* margin: vertical | horizontal */
+/* margin: top | horizontal | bottom */
+/* margin: top | right | bottom | left  - clockwise */
+
+
+/* PADDING - inside the border */
+/* MARGIN - outside the border */
+
+button {
+    padding: 10px 20px 30px 40px;
+    margin: 10px 20px 30px 40px
+}
+
+h1 {
+    background-color: pink;
+    width: 200px;
+    padding-left: 100px;
+    padding-top: 50px;
+    margin: 0
+}
+
+/* This is what a lot of people do when making a new webpage, 
+in order to get the extra space */
+body {
+    margin: 0;
+}
+
+span {
+    margin-left: 30px;
+    /* this does not work because of "display" */
+    margin-top: 30px;
+}

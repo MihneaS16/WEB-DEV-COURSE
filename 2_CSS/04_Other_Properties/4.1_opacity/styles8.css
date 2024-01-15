@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+}
+
+section {
+    width: 500px;
+    height: 500px;
+    /* The last 2 digits set the transparency ff for solid 00 for transparent 
+    (in this case, it is set to e4) */
+    background-color: #00cca0e4;
+    ;
+}
+
+/* The difference between the alpha property and the opacity is that 
+for the alpha property, it only applies to a certain part of the main element, 
+while the oppacity applies for the entire element */
+
+#rgba {
+    width: 50%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#opacity {
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+    opacity: 0.7;
+}

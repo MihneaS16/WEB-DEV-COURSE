@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+    font-weight: 400;
+    /*normal*/
+
+    text-decoration: #ff5564 underline wavy;
+    letter-spacing: 10px;
+    font-size: 50px;
+    /* font-family: Big Caslon, Arial; */
+    font-family: monospace;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    /* to remove the underline of a links */
+}
+
+p {
+    text-align: left;
+    line-height: 2;
+    letter-spacing: normal;
+    font-family: Verdana, Arial, sans-serif;
+
+}

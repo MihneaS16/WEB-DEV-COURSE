@@ -1,0 +1,19 @@
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/background */
+
+section {
+    width: 80%;
+    height: 800px;
+    background-image: url('https://images.unsplash.com/photo-1564442038901-4f9a19d3d456?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1227&q=80');
+    background-size: cover;
+    /* background-size: contain;  */
+    background-position: top;
+
+    /*alternative to all of the above */
+    background: center/cover url("https://images.unsplash.com/photo-1564442038901-4f9a19d3d456?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1227&q=80");
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    color: white;
+}

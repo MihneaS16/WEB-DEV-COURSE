@@ -1,0 +1,20 @@
+/* https://fonts.google.com/?sort=popularity */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    width: 60%;
+    margin: 0 auto;
+}
+
+h1+h2 {
+    margin-top: 10px;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 100;
+}

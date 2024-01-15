@@ -1,0 +1,73 @@
+/* Explanations: https://developer.mozilla.org/en-US/docs/Web/CSS/position */
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #3d405b;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+}
+
+#middle_one {
+    background-color: #81b29a;
+}
+
+#middle_two {
+    background-color: #b961cf;
+}
+
+#middle_three {
+    background-color: #ccce5b;
+}
+
+#middle_four {
+    background-color: #626cca;
+}
+
+#middle_five {
+    background-color: #62ca6b;
+}
+
+
+/* Position: STATIC */
+#static #middle_one {
+    position: static;
+    top: 100px;
+}
+
+
+/* Position: RELATIVE */
+#relative #middle_two {
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+
+/* Position: ABSOLUTE */
+#absolute #middle_three {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+#absolute {
+    position: relative;
+}
+
+
+/* Position: FIXED */
+#fixed #middle_four {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+/* Position: STICKY */
+#sticky #middle_five {
+    position: -webkit-sticky;
+    top: 10px;
+    z-index: 1;
+}

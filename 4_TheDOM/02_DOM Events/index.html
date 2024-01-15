@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Basics</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <h1>Events</h1>
+    <!-- this is not advised! -->
+    <button onclick="alert('you clicked me!'); alert('stop clicking!')">Click Me!</button>
+
+    <button id="v2">Click me! v2</button>
+
+    <button id="v3">Click me! v3</button>
+
+    <button id="tas">Twist and Shout!</button>
+
+    <div class="container">
+        <h2>Events & The Keyword This</h2>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+
+        <h1>Meow</h1>
+        <h1>Hatz</h1>
+    </div>
+
+    <div class="keyboard_events">
+        <h2>Keyboard Events & Event Objects</h2>
+        <button>Click</button>
+        <input type="text">
+    </div>
+
+    <div class="form">
+        <h2>Forms</h2>
+        <br>
+        <!-- When this form is submitted, whatever data there is in this form, is going to be submitted to the /shelter (action) -->
+        <form action="/shelter" id="shelterForm">
+            <input type="text" id="catName">
+            <button>Submit</button>
+        </form>
+        <h2>Available Cats:</h2>
+        <ul id="cats">
+
+        </ul>
+    </div>
+    <div class="form2">
+        <form action="/dogs" id="tweetForm">
+            <input type="text" name="username" placeholder="username">
+            <input type="text" name="tweet" placeholder="tweet">
+            <button>Post Tweet</button>
+        </form>
+
+        <h2>Tweets:</h2>
+        <ul id="tweets">
+
+        </ul>
+    </div>
+
+    <div class="input_change">
+        <h2>Type Below:</h2>
+        <input type="text">
+    </div>
+
+    <div class="bubbling">
+        <h2>Event Bubbling</h2>
+        <p>
+            Click To Hide
+            <button id="changeColor">Change Color</button>
+        </p>
+    </div>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
